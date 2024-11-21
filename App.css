@@ -1,0 +1,195 @@
+/* General Body Styles */
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e6e6e6;
+}
+
+/* Heading Styles */
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+h3, h4 {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Input Field Styling */
+.input-field label {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+  color: #495057;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.input-field input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Button Styling */
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+.btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* Alert Box Styling */
+.alert {
+  margin-top: 20px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Response Section */
+.response-section {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #f7f9fa;
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.response-section h4 {
+  margin-bottom: 15px;
+  color: #495057;
+  text-align: center;
+}
+
+/* Preformatted Text Styling */
+pre {
+  padding: 15px;
+  background-color: #e9ecef;
+  border-radius: 6px;
+  font-size: 15px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #343a40;
+  line-height: 1.4;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #495057;
+}
+
+/* Footer (Optional) */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+.input-field input:focus,
+.btn:hover {
+  transition: all 0.3s ease;
+}
+
+.alert {
+  animation: fadeIn 0.5s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  h3, h4 {
+      font-size: 1.25rem;
+  }
+
+  .btn {
+      font-size: 16px;
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
